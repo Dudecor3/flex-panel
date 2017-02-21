@@ -14,10 +14,7 @@ const panels = document.querySelectorAll('.panel');
 
 function add_event_to_panels() {
     var number_of_panels = panels.length;
-
-    var i;
-
-    for (i = 0; i < number_of_panels; i++) {
+    for (var i = 0; i < number_of_panels; i++) {
         panels[i].addEventListener('click', toggle_open);
         panels[i].addEventListener('transitionend', toggle_active);
     }
